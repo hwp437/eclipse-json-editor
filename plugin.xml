@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            name="DP Application Editor"
+            default="true"
+            filenames="applications.json"
+            icon="icons/sample.gif"
+            contributorClass="com.mmi.dreampark.editor.editors.DPApplicationContributor"
+            class="com.mmi.dreampark.editor.editors.DPApplicationEditor"
+            id="com.mmi.dreampark.editor.editors.DPApplicationEditor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            name="DP Application Wizards"
+            id="com.mmi.dreampark.editor">
+      </category>
+      <wizard
+            name="DP Application Page Editor file"
+            icon="icons/sample.gif"
+            category="com.mmi.dreampark.editor"
+            class="com.mmi.dreampark.editor.wizards.DPApplicationWizard"
+            id="com.mmi.dreampark.editor.wizards.DPApplicationWizard">
+      </wizard>
+   </extension>
+
+</plugin>
